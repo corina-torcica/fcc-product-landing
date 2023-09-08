@@ -1,0 +1,245 @@
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #18161B;
+  }
+  
+  .logo {
+    width: 30vw;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50vw;
+    font-weight: bold;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #hero {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 94vh;
+    background: linear-gradient(#18161B 60%, #7D2BC4);
+  }
+  
+  #hero > img {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    height: 94vh;
+  }
+  
+  #hero > div {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+    width: 1000px;
+    color: white;
+    background-color: rgba(0, 0, 0, 30%);
+    border-radius: 50px;
+  
+  }
+  
+  #hero > div > h1 {
+    font-size: 45px;
+  }
+  
+  #hero > div > p {
+    margin-top: 15px;
+    color: lightgrey;
+    font-size: 30px;
+    font-style: italic;
+  }
+  
+  form {
+    display: block;
+    text-align: center;
+  }
+  
+  input[type=email] {
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+  }
+  
+  input[type=submit] {
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 25px;
+    font-weight: bold;
+    color: white;
+    border-radius: 45px;
+    border: none;
+    background-color: #A238FF;
+    box-shadow: 0px 0px 20px 3px #A238FF;
+  }
+  
+  #features {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding-top: 50px;
+    background: linear-gradient(#7D2BC4 40%, #1F2190);
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1050px;
+    margin: 20px auto;
+    padding: 40px 20px; 
+    background-color: rgba(0, 0, 0, 65%);
+    border-radius: 50px;
+  }
+  
+  .icon {
+    font-size: 50px;
+    margin: 0 25px;
+  }
+  
+  .icon > i {
+    color: #8799ff;
+  }
+  
+  .feature > .description > p {
+    margin-top: 15px;
+    color: lightgrey;
+  }
+  
+  #how-it-works {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background: linear-gradient(#1F2190, #000042 70%);
+  }
+  
+  iframe {
+    padding: 120px;
+  }
+  
+  #pricing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 3rem;
+    padding: 120px 0;
+    background: linear-gradient(#000042, black 40%);
+    color: white;
+  }
+  
+  .product {
+    width: 400px;
+    padding: 25px 0;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 20%);
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 3px #A238FF;
+  }
+  
+  .product > h2 {
+    margin: 15px 0;
+    color: #ddc9ff;
+  }
+  
+  .product > hr {
+    width: 80%;
+    margin: 0 auto;
+    color: grey;
+  }
+  
+  .product > p:first-of-type {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .product > p {
+    font-weight: bold;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 45px;
+    padding-bottom: 30px;
+  }
+  
+  .social-link > i {
+    color: white;
+    border-radius: 100px;
+  }
+  
+  .social-media > a {
+    margin: 10px;
+  }
+  
+  hr {
+    height: 1px;
+    color: lightgrey;
+  }
+  
+  .credits {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .credits > p:first-of-type {
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    #hero > div > h1 {
+      font-size: 30px;
+    }
+  
+    #hero > div > p {
+      font-size: 20px;
+    }
+  }
